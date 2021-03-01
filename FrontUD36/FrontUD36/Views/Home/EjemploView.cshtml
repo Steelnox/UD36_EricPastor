@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "EjemploView";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@{
+    //Funcion obtener nombre en C#
+
+    string getNombre(string nombre)
+    {
+        return nombre;
+    }
+}
+
+<p>Bienvenido a mi página de Ejemplo @getNombre("Eric")</p>
+
+<input type="button" value="GetAll" id="boton1">
+<input type="button" value="GetId" id="boton2">
+<input type="button" value="GetStock" id="boton3">
+
+<h2>
+    Listado de Usuarios del Sistema</h1>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Category</th>
+                <th scope="col">Color</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody id="resultados">
+        </tbody>
+    </table>
